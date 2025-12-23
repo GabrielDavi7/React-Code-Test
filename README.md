@@ -14,4 +14,4 @@ Este repositório foi criado para documentar meus estudos e práticas com **Reac
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/) (se estiver usando)
+- [TypeScript](https://www.typescriptlang.org/)
