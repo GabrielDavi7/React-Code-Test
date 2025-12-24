@@ -40,9 +40,35 @@ function App() {
       
 
   */
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      title: "Teste Task",
+      description: "Testando tasks em useState",
+      complete: false,
+    },
+    {
+      id: 2,
+      title: "Desenvolvimento react",
+      description: "Teste do ambiente react e frontend",
+      complete: false,
+    },
+    {
+      id: 3,
+      title: "teste 2 ",
+      description: "Teste",
+      complete: false,
+    },
+  ]);
+
   return (
     <div className="w-screen h-screen bg-[#114d4d] flex justify-center p-6">
-      <AddTasks />
+      <div className="w-[500px]">
+        <h1 className="text-3xl text-[#27181C] font-bold text-center">
+          Task Manager
+        </h1>
+        <Tasks tasks={tasks} banana="adwad" />
+      </div>
     </div>
   );
 }
