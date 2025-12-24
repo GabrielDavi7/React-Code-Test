@@ -37,6 +37,7 @@ function App() {
   /*
       <div className="w-screen h-screen"> faz com que a div cubra toda a tela
       <div className="w-screen h-screen bg-[#114d4d] flex justify-center p-6"> cores em HEX
+      
 
   */
   return (
