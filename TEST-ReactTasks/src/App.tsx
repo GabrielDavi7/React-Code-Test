@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tasks from "./components/Tasks";
 import AddTasks from "./components/AddTasks";
+import { v4 } from "uuid";
 
 function App() {
   //==================== teste do app realizados aqui ====================
@@ -77,13 +78,23 @@ function App() {
     setTasks(newTasks);
   }
 
+  function addNewTask(title, description) {
+    const newTasks = {
+      id: v4(),
+      title: title,
+      description: description,
+      complete: false,
+    };
+    setTasks([...tasks, newTasks]);
+  }
+
   return (
     <div className="w-screen h-screen bg-[#2d3839] flex justify-center p-6">
       <div className="w-[500px] space-y-4">
         <h1 className="text-3xl text-[#27181C] font-bold text-center">
           Task Manager
         </h1>
-        <AddTasks />
+        <AddTasks addNewTask={addNewTask} />
         <Tasks
           tasks={tasks}
           taskClick={taskClick}
