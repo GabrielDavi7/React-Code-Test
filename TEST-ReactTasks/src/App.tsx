@@ -78,11 +78,12 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-[#114d4d] flex justify-center p-6">
-      <div className="w-[500px]">
+    <div className="w-screen h-screen bg-[#2d3839] flex justify-center p-6">
+      <div className="w-[500px] space-y-4">
         <h1 className="text-3xl text-[#27181C] font-bold text-center">
           Task Manager
         </h1>
+        <AddTasks />
         <Tasks
           tasks={tasks}
           taskClick={taskClick}
